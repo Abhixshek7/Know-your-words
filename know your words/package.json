@@ -1,0 +1,11 @@
+{
+  "name": "know-your-words",
+  "version": "1.0.0",
+  "description": "Chrome extension for word meanings",
+  "scripts": {
+    "generate-icons": "node generate_icons.js"
+  },
+  "dependencies": {
+    "canvas": "^2.11.0"
+  }
+} 

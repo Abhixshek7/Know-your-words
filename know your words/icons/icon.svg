@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+    <!-- Book/Dictionary base -->
+    <path d="M24 32h80v64H24c-4.4 0-8-3.6-8-8V40c0-4.4 3.6-8 8-8z" fill="#4A90E2"/>
+    <path d="M104 32v64H24c-4.4 0-8-3.6-8-8V40c0-4.4 3.6-8 8-8h80z" fill="#357ABD"/>
+    
+    <!-- Book pages -->
+    <path d="M32 40h64v48H32V40z" fill="white"/>
+    <path d="M32 40h64v48H32V40z" fill="white" opacity="0.1"/>
+    
+    <!-- Magnifying glass -->
+    <circle cx="64" cy="64" r="16" fill="#FF6B6B"/>
+    <path d="M76 76l12 12" stroke="white" stroke-width="4" stroke-linecap="round"/>
+</svg> 
