@@ -1,7 +1,7 @@
 let meaningPopup = null;
 
 // Create and show the meaning popup
-function showMeaningPopup(word, meaning, x, y) {
+function showMeaningPopup(word, meaning, example, x, y) {
     // Remove existing popup if any
     if (meaningPopup) {
         meaningPopup.remove();
@@ -18,7 +18,16 @@ function showMeaningPopup(word, meaning, x, y) {
             <button class="close-btn">&times;</button>
         </div>
         <div class="meaning-content">
-            <p>${meaning}</p>
+            <div class="definition">
+                <h4>Definition:</h4>
+                <p>${meaning}</p>
+            </div>
+            ${example ? `
+            <div class="example">
+                <h4>Example:</h4>
+                <p>${example}</p>
+            </div>
+            ` : ''}
         </div>
     `;
     
@@ -65,6 +74,7 @@ document.addEventListener('dblclick', async (e) => {
                     showMeaningPopup(
                         word,
                         response.meaning,
+                        response.example,
                         rect.left + window.scrollX,
                         rect.bottom + window.scrollY + 10
                     );

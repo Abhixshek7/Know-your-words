@@ -2,10 +2,13 @@
   "manifest_version": 3,
   "name": "Know Your Words",
   "version": "1.0",
-  "description": "Get instant word meanings by double-clicking on any word",
+  "description": "Double click on any word to see its meaning and example",
   "permissions": [
     "activeTab",
-    "storage"
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
   ],
   "action": {
     "default_popup": "popup.html",
